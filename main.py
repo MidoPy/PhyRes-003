@@ -1,15 +1,17 @@
+import webbrowser
+
 from google.auth.exceptions import GoogleAuthError
-from googleapiclient.discovery import build
 from google.oauth2 import service_account
+from googleapiclient.discovery import build
+# from GoogleSheet import GoogleSheet
+from kivy.clock import Clock
+from kivy.core.window import Window
+from kivy.lang import Builder
 # --------------------------------------------
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.screenmanager import ScreenManager
-from kivy.lang import Builder
-from kivy.core.window import Window
-#from GoogleSheet import GoogleSheet
-from kivy.clock import Clock
-import webbrowser
+
 # --------------------------------------------
 
 # GoogleSheet.py
@@ -42,7 +44,7 @@ class GoogleSheet:
     Dic_of_Result = {}
 
     def get_name(self, parameter):
-        name_cell = 'IDSheet!C'+str(parameter)
+        name_cell = 'IDSheet!C' + str(parameter)
         getname = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=name_cell)
         response = getname.execute()
         values = response.get('values', [])
@@ -51,7 +53,7 @@ class GoogleSheet:
         return self.get_tri_one_result(parameter)
 
     def get_tri_one_result(self, parameter):
-        name_cell = 'TriOne!B' + str(parameter)+':F'+str(parameter)
+        name_cell = 'TriOne!B' + str(parameter) + ':F' + str(parameter)
         getname = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=name_cell)
         response = getname.execute()
         values = response.get('values', [])
@@ -65,7 +67,7 @@ class GoogleSheet:
         return self.get_tri_two_result(parameter)
 
     def get_tri_two_result(self, parameter):
-        name_cell = 'TriTwo!B' + str(parameter)+':F'+str(parameter)
+        name_cell = 'TriTwo!B' + str(parameter) + ':F' + str(parameter)
         getname = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=name_cell)
         response = getname.execute()
         values = response.get('values', [])
@@ -79,7 +81,7 @@ class GoogleSheet:
         return self.get_tri_three_result(parameter)
 
     def get_tri_three_result(self, parameter):
-        name_cell = 'TriThree!B' + str(parameter)+':F'+str(parameter)
+        name_cell = 'TriThree!B' + str(parameter) + ':F' + str(parameter)
         getname = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=name_cell)
         response = getname.execute()
         values = response.get('values', [])
@@ -90,7 +92,7 @@ class GoogleSheet:
             self.TriThree_List.remove('#VALUE!')
             self.TriThree_List.insert(3, '*')
         self.Dic_of_Result.update(TriThree=self.TriThree_List)
-        #print(GoogleSheet.Dic_of_Result)
+        # print(GoogleSheet.Dic_of_Result)
         return GoogleSheet.Dic_of_Result
 
     def operation(self, *args):
@@ -120,6 +122,8 @@ class GoogleSheet:
             self.error_text = 'please check your connexion and try again'
         GoogleSheet.error_text = self.error_text
         return GoogleSheet.error_text
+
+
 # end of GoogleSheet.py
 
 
@@ -192,7 +196,6 @@ Builder.load_file('main.kv')
 class DesignApp(MDApp):
 
     def build(self):
-
         sm = ScreenManager()
         sm.add_widget(Main(name='main'))
         sm.add_widget(Login(name='login'))
