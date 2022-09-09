@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mystudentsnotes",
+  "private_key_id": "80132fe0206771ad6f81a37893261c8d4e682669",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC28m/ffOQ+3VUo\nG1gIHCOrGUjw0UVTeLutli681y0U2tJj+eVbWDoi2erntKIAfi38eE5Ian+mrhpX\nDGNYA3vU2aKWsL8wM3zhUiu+ouVucYJkgkNGueQffQnI0sxjEd/O3AJr3QEECNXj\nvIyG+AixZl4Bhl9VmbCm2H37k+ueIprETXo1/g683PXCKHEypMC8UbhNbejTwXIP\nvyLE41kJvEq3oYaVCVSjVBTZCRStCMl4Keea4Apa1+fsh2TMktUqGooAPOuWRRvW\nyz58jW+KB/+mog3FBw8cmUmBLC9XIR5Lg/RMFUl35iTLM6YNZzhVwvxW5GxxNyt4\nWwXlDhwbAgMBAAECggEACXMCNj/kJh8We+jVpi2V5gt7Sfz1ILeWsgOUzGosyOv4\ne/N3Vj17Wzt4N5mL2Iyr4WNxX6ooh7psX9yi8PPVHIxVKoVciqfOJnExEzqksQyp\n2Hkl8mw9jSbPL5E7v044Ch4w/dM/by7ppUai14HOKSOJbXi8SdaTWjrKXwkn3VYD\nzAdrcXbM/gMf1nHNOW6PbONAhrJWSOrsU2F6L9jjm8bTS2U9eCIdgVrrb9TrQQV4\nKDbt8AYG5+GVZqu95LamvHt2QxZ5sFg6v2NF2gjaMM3zbMdC/OQvBSGPRtNMz5/m\nxkGK+3sh1StETluKSIIXSyb3K/KaeF4iCOZOStwJWQKBgQDq7CvGn6gqHts5LCY8\nU1S3Z4kHL+KCTPuGD/6rWxPU8FIMk6R2nVGhKgW6FVyFvXlLVMVNVtZxKJGl8bkn\nKeoOxDStESMlnPv52ga5BtOKHyAMxpiKUXcGQ1yNETV04t/gJV323K2nuVOmjZ6L\nPM7EdzI0/s4h7AugOtVUpVcOLwKBgQDHXHa/PiKVOOI2E6dTtfXmIWGn0Su7lqOk\n4s0hBZka7SPT8UcJXBtn4tmtN6j/Urq9AkLvzejbYKxCHJm2YOXFyG0HeIlD+7ZB\ntFCQ2z2yxeAkR9J5YaA5wYWcRDUSt6kzZeDsfiTAzf4msSc+qKLAw7K2CCpgYPly\nqKk5EFjh1QKBgQCNK+VWk+UDgs1sevpzMARtvnsa5Yyxjr9rnbsFkFLHmK9FvYeM\nfBdsyQrt+x5BhE4aldOHGVL+Z0m3Nh50yXxM6V1aTz0WwlKtn3aAw/hlPTUOWF2c\naT4kdmBsqVW9awTr9qiTy6NTckwxf1MyCxWZ/KMgM6r9uZJ29EP0fPNmowKBgQCQ\nws9nJtMtz9RSuAq0elhH9s1WckhzOnsxa47P/6ShLLjrWTPf1AYCdXLimJwaahQ2\n0sGQJ9CCG7x5dRMYn1u5NkQVPK1PtCMvqqMlzE0M1yperdhjU0RpK+C9C7oOEVbH\nf57HmwFND0cRCWoZ0ZH8rx3BmERNH52CaH4YdYpU0QKBgEsU2Um/B7HOgc8tyAAW\neVYV1yi+oM9v+E0L4aKs5pz9kyIqcbERw3MM4wZpaxFkupSYfCLUBs8eepjCaYAO\nhHBiFBnrSh4P8nORRc9UU5fFQreSIkTHKPgdLRPk2bWWU+gmblB58NboKDttk72r\n/YDWYDs/OAXvmE2oujMjB+81\n-----END PRIVATE KEY-----\n",
+  "client_email": "myclassesnotes@mystudentsnotes.iam.gserviceaccount.com",
+  "client_id": "102071011455697040613",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/myclassesnotes%40mystudentsnotes.iam.gserviceaccount.com"
+}
