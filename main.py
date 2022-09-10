@@ -1,5 +1,4 @@
 import webbrowser
-
 from google.auth.exceptions import GoogleAuthError
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
@@ -11,9 +10,7 @@ from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.screenmanager import ScreenManager
-
 # --------------------------------------------
-
 # GoogleSheet.py
 
 SERVICE_ACCOUNT_FILE = 'keys.json'
@@ -92,7 +89,6 @@ class GoogleSheet:
             self.TriThree_List.remove('#VALUE!')
             self.TriThree_List.insert(3, '*')
         self.Dic_of_Result.update(TriThree=self.TriThree_List)
-        # print(GoogleSheet.Dic_of_Result)
         return GoogleSheet.Dic_of_Result
 
     def operation(self, *args):
@@ -123,14 +119,11 @@ class GoogleSheet:
         GoogleSheet.error_text = self.error_text
         return GoogleSheet.error_text
 
-
 # end of GoogleSheet.py
-
 
 Window.keyboard_anim_args = {'t': 'in_out_quart', 'd': .2}
 
 Window.softinput_mode = 'below_target'
-
 
 class Login(MDScreen):
     def on_enter(self, *args):
