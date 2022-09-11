@@ -2,7 +2,6 @@ import webbrowser
 from google.auth.exceptions import GoogleAuthError
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
-# from GoogleSheet import GoogleSheet
 from kivy.clock import Clock
 from kivy.core.window import Window
 from kivy.lang import Builder
